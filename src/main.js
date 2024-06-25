@@ -32,6 +32,7 @@ refs.imageSearchForm.addEventListener('submit', async e => {
     if (query === '') {
         refs.imageList.innerHTML = '';
         refs.loader.style.display = 'none';
+        refs.loadBtn.style.display = 'none';
         return iziToast.error({
             message: 'Sorry, there are no images matching your search query. Please try again!',
             position: 'bottomRight',
@@ -52,6 +53,7 @@ refs.imageSearchForm.addEventListener('submit', async e => {
         if (maxPage === 0) {
             refs.imageList.innerHTML = '';
             refs.loader.style.display = 'none';
+            refs.loadBtn.style.display = 'none';
             return iziToast.error({
             message: 'Sorry, there are no images matching your search query. Please try again!',
             position: 'bottomRight',
