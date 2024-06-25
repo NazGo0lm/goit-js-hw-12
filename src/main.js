@@ -168,6 +168,9 @@ function noLoadBtn() {
 }
 
 
+
+
+
 function skipOldElement() {
   const liElem = refs.imageList.children[0];
   const height = liElem.getBoundingClientRect().height;
