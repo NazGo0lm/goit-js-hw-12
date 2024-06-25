@@ -50,6 +50,9 @@ refs.imageSearchForm.addEventListener('submit', async e => {
         maxPage = Math.ceil(data.total / perPage);
         //console.log(maxPage)
 
+
+        
+
         if (maxPage === 0) {
             refs.imageList.innerHTML = '';
             refs.loader.style.display = 'none';
